@@ -769,11 +769,10 @@ function initResumeDownloader() {
   if (!btn) return;
 
   btn.addEventListener('click', (event) => {
-    const resumeUrl = 'SOPHY NALIAKA WAFULA CV - Copy.pdf';
+    const resumeUrl = 'SOPHY_NALIAKA_WAFULA_CV.pdf';
     if (btn.tagName === 'A') {
       btn.setAttribute('href', resumeUrl);
-      btn.setAttribute('target', '_blank');
-      btn.setAttribute('rel', 'noopener');
+      btn.setAttribute('download', '');
       return;
     }
 
