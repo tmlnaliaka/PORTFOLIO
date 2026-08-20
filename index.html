@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sophy Naliaka Wafula | Software Engineer & Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Sophy Naliaka Wafula - Software Engineering Student at Zetech University specializing in Full-Stack Web Development, Database Management, and UI/UX Design.">
+  <meta name="keywords" content="Sophy Naliaka Wafula, Software Engineer, Portfolio, Zetech University, Full Stack Developer, Python, JavaScript, MySQL, Kenya Developer">
+  <meta name="author" content="Sophy Naliaka Wafula">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Sophy Naliaka Wafula | Software Engineer Portfolio">
+  <meta property="og:description" content="Detail-oriented Software Engineering student specializing in full-stack development, database architecture, and UI/UX design.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/tmlnaliaka">
+
+  <!-- Remix Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Particle Animation Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Glassmorphism Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-tag">&lt;</span>SNW<span class="logo-tag"> /&gt;</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#simulator" class="nav-link">Live Demo</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="resume.html" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="ri-moon-fill" id="theme-icon"></i>
+        </button>
+
+        <a href="#contact" class="btn btn-primary">
+          <i class="ri-send-plane-fill"></i> Get In Touch
+        </a>
+
+        <button class="mobile-nav-toggle" id="nav-options" aria-label="Toggle Menu">
+          <i class="ri-menu-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-content-grid">
+      <div class="hero-text-side">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span> Full-Stack Engineer Open to Software Opportunities
+        </div>
+
+        <h1 class="hero-name">
+          Hi, I'm <span class="purple-gradient-text">Sophy Naliaka</span>
+        </h1>
+
+        <div class="hero-typewriter-container">
+          I am a <span class="typewriter-text" id="typewriter"></span>
+        </div>
+
+        <p class="hero-bio">
+          Detail-oriented Software Engineering student at Zetech University with a passion for building full-stack web applications, architecting robust relational databases, and crafting intuitive UI/UX experiences.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="ri-rocket-line"></i> Explore My Work
+          </a>
+          <a href="#simulator" class="btn btn-outline">
+            <i class="ri-code-s-slash-line"></i> Interactive Playground
+          </a>
+          <a href="resume.html" class="btn btn-outline" id="download-cv-btn">
+            <i class="ri-file-download-line"></i> Resume / CV
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3 id="stat-repos">17+</h3>
+            <p>GitHub Repositories</p>
+          </div>
+          <div class="stat-item">
+            <h3>BSc SE</h3>
+            <p>Zetech University</p>
+          </div>
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>Clean Code Commitment</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual-card">
+        <div class="profile-avatar-wrapper">
+          <div class="profile-avatar-inner">
+            <i class="ri-code-box-line avatar-graphic"></i>
+            <h4 style="color: var(--primary-bright); font-size: 1.2rem; margin-top: 0.5rem;">Sophy Naliaka</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Full-Stack &amp; UI/UX</p>
+          </div>
+        </div>
+
+        <!-- Floating Interactive Badges -->
+        <div class="floating-badge badge-1">
+          <div class="badge-icon">
+            <i class="ri-database-2-fill"></i>
+          </div>
+          <div>
+            <h5 style="font-size: 0.9rem;">MySQL Architect</h5>
+            <p style="font-size: 0.75rem; color: var(--text-muted);">Schema &amp; CRUD Expert</p>
+          </div>
+        </div>
+
+        <div class="floating-badge badge-2">
+          <div class="badge-icon" style="color: var(--accent-fuchsia); background: rgba(217, 70, 239, 0.15);">
+            <i class="ri-layout-4-fill"></i>
+          </div>
+          <div>
+            <h5 style="font-size: 0.9rem;">Certified UI/UX</h5>
+            <p style="font-size: 0.75rem; color: var(--text-muted);">Responsive Design</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Who I Am</span>
+        <h2 class="section-title">About <span class="purple-gradient-text">Sophy Naliaka Wafula</span></h2>
+        <p class="section-desc">Passionate software developer driven by innovation, clean architecture, and continuous learning.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <h3 style="font-size: 1.6rem; margin-bottom: 1rem; color: var(--primary-bright);">Career Summary</h3>
+          <div class="about-text">
+            <p>
+              I am a Software Engineering student at <strong>Zetech University</strong> (Ongoing 2024 - 2027) based in Nairobi, Kenya. I hold a solid foundation in full-stack web development, object-oriented programming, and relational database management.
+            </p>
+            <p>
+              I possess proven experience architecting full-stack systems like the <em>Online Local Thrift Shop Management System</em>, integrating secure Admin Authentication, real-time MySQL stock management, and dynamic JavaScript frontends.
+            </p>
+            <p>
+              Beyond core programming in Python, JavaScript, and Kotlin, I am certified in <strong>UX/UI Design</strong> from YMCA Kenya and Computer Applications from the Kenya Institute of Management, allowing me to blend engineering logic with user-centered design.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-card">
+          <h3 style="font-size: 1.6rem; margin-bottom: 1.5rem; color: var(--primary-bright);">Soft Skills &amp; Languages</h3>
+          
+          <div class="soft-skills-grid">
+            <div class="soft-skill-pill">
+              <i class="ri-brain-line"></i> Analytical Thinking
+            </div>
+            <div class="soft-skill-pill">
+              <i class="ri-team-line"></i> Team Collaboration
+            </div>
+            <div class="soft-skill-pill">
+              <i class="ri-compass-3-line"></i> Leadership
+            </div>
+            <div class="soft-skill-pill">
+              <i class="ri-focus-3-line"></i> Attention to Detail
+            </div>
+          </div>
+
+          <h4 style="font-size: 1.2rem; margin: 2rem 0 1rem 0; color: var(--text-main);">Languages</h4>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <div style="flex: 1; background: rgba(10, 7, 20, 0.5); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-purple);">
+              <h5 style="color: var(--primary-bright);">English</h5>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Fluent (Professional &amp; Academic)</p>
+            </div>
+            <div style="flex: 1; background: rgba(10, 7, 20, 0.5); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-purple);">
+              <h5 style="color: var(--accent-fuchsia);">Swahili</h5>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Intermediate Conversational</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Matrix Section -->
+  <section class="section" id="skills" style="background: rgba(15, 10, 30, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Technical Toolkit</span>
+        <h2 class="section-title">Skills &amp; <span class="purple-gradient-text">Technologies</span></h2>
+        <p class="section-desc">Extensive skill set across full-stack languages, relational databases, tools, and UI/UX design.</p>
+      </div>
+
+      <div class="skills-tabs">
+        <button class="skill-tab-btn active" data-category="all">All Skills</button>
+        <button class="skill-tab-btn" data-category="programming">Programming Languages</button>
+        <button class="skill-tab-btn" data-category="database">Databases &amp; Systems</button>
+        <button class="skill-tab-btn" data-category="tools">Tools &amp; Version Control</button>
+        <button class="skill-tab-btn" data-category="design">Design &amp; UI/UX</button>
+      </div>
+
+      <div class="skills-grid" id="skills-grid">
+        <!-- JS will populate interactive skill cards -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Showcase Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Portfolio Highlights</span>
+        <h2 class="section-title">Featured <span class="purple-gradient-text">Projects</span></h2>
+        <p class="section-desc">Real-world applications, academic systems, and open-source contributions crafted with precision.</p>
+      </div>
+
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="fullstack">Web &amp; Full-Stack</button>
+        <button class="filter-btn" data-filter="mobile-ai">Mobile &amp; AI</button>
+        <button class="filter-btn" data-filter="systems">Database &amp; Systems</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- JS will populate project cards -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Playground Section -->
+  <section class="section" id="simulator" style="background: rgba(11, 7, 24, 0.6);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Interactive Terminal</span>
+        <h2 class="section-title">Live Code &amp; <span class="purple-gradient-text">System Simulator</span></h2>
+        <p class="section-desc">Test real-time code executions and simulated API workflows from Sophy's major projects directly in your browser!</p>
+      </div>
+
+      <div class="playground-wrapper">
+        <div class="terminal-header">
+          <div class="terminal-buttons">
+            <span class="terminal-dot dot-red"></span>
+            <span class="terminal-dot dot-yellow"></span>
+            <span class="terminal-dot dot-green"></span>
+          </div>
+          <div class="terminal-title">
+            <i class="ri-terminal-box-line"></i> sophy@dev-environment: ~/projects/simulation
+          </div>
+          <div style="font-size: 0.75rem; color: var(--text-dim);">ES6 JS Engine</div>
+        </div>
+
+        <div class="terminal-body">
+          <div class="terminal-code-side">
+            <label class="form-label" for="demo-select" style="font-size: 0.85rem; color: var(--primary-bright);">
+              Select Simulation Module:
+            </label>
+            <select class="terminal-select" id="demo-select">
+              <option value="thrift">1. Thrift Shop: Stock Allocation &amp; Auth Check (JavaScript/MySQL)</option>
+              <option value="kdms">2. KDMS: Gemini AI Emergency Dispatch Alert (FastAPI/React)</option>
+              <option value="notes">3. SecureNotesApp: AES-256 Note Encryption (Kotlin/Android)</option>
+              <option value="oop">4. OOP &amp; Data Pipeline Execution (Python)</option>
+            </select>
+
+            <div class="code-editor" id="code-editor-content">
+              <!-- Code snippet loaded dynamically -->
+            </div>
+
+            <button class="btn btn-primary" id="run-code-btn" style="margin-top: 1.2rem; width: 100%;">
+              <i class="ri-play-fill"></i> Execute Simulation Code
+            </button>
+          </div>
+
+          <div class="terminal-output-side">
+            <div class="output-title">&gt; CONSOLE OUTPUT &amp; LOGS</div>
+            <div class="output-console" id="output-console">
+              Select a project module and click "Execute Simulation Code" to see real-time output logs.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Certifications Timeline -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Academic Journey</span>
+        <h2 class="section-title">Education &amp; <span class="purple-gradient-text">Certifications</span></h2>
+        <p class="section-desc">Rigorous software engineering studies combined with specialized practical certifications.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2024 - 2027 (Ongoing)</span>
+            <h3 style="font-size: 1.3rem; margin-bottom: 0.3rem;">Bachelor of Science in Software Engineering</h3>
+            <h4 style="font-size: 0.95rem; color: var(--primary-bright); margin-bottom: 0.8rem;">Zetech University — Ruiru, Kenya</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">
+              Focusing on Object-Oriented Programming, Database Systems, Web Application Architecture, Data Structures &amp; Algorithms, and Software Testing.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2024</span>
+            <h3 style="font-size: 1.3rem; margin-bottom: 0.3rem;">Certificate in UX/UI Design</h3>
+            <h4 style="font-size: 0.95rem; color: var(--accent-fuchsia); margin-bottom: 0.8rem;">YMCA Kenya — Nairobi, Kenya</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">
+              Mastered user research, wireframing, interactive prototyping, color theory, visual hierarchy, and accessibility standards for web and mobile interfaces.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2024</span>
+            <h3 style="font-size: 1.3rem; margin-bottom: 0.3rem;">Certificate of Computer Applications</h3>
+            <h4 style="font-size: 0.95rem; color: var(--accent-cyan); margin-bottom: 0.8rem;">Kenya Institute of Management — Nairobi, Kenya</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">
+              Comprehensive training in computer applications, office suites, document management, and foundational IT operations.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cisco-badge-showcase" aria-label="Cisco certification badges">
+        <div class="section-header small-header">
+          <span class="section-subtitle">Cisco Credentials</span>
+          <h3 class="section-title badge-title">Certification <span class="purple-gradient-text">Badges</span></h3>
+        </div>
+
+        <div class="cisco-badge-grid">
+          <a class="cisco-badge-card" href="Sophy Wafula Introduction_to_IoT_and_Digital_Transformation Cisco Certificate - Copy.pdf" target="_blank" rel="noopener" title="Introduction to IoT and Digital Transformation">
+            <span class="badge-icon">IoT</span>
+            <span class="badge-name">Introduction to IoT &amp; Digital Transformation</span>
+          </a>
+          <div class="cisco-badge-card muted-card" title="Cisco certified networking portfolio badge">
+            <span class="badge-icon">NET</span>
+            <span class="badge-name">Networking Essentials</span>
+          </div>
+          <div class="cisco-badge-card muted-card" title="Cisco cybersecurity badge">
+            <span class="badge-icon">SEC</span>
+            <span class="badge-name">Security Fundamentals</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Connect Section -->
+  <section class="section" id="contact" style="background: rgba(15, 10, 30, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="purple-gradient-text">Connect</span></h2>
+        <p class="section-desc">Interested in collaborating, hiring for an entry-level software engineering role, or discussing a project?</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-cards">
+          <a href="mailto:sofiawaf05@gmail.com" class="contact-card">
+            <div class="contact-icon">
+              <i class="ri-mail-send-fill"></i>
+            </div>
+            <div>
+              <h4 style="font-size: 1.1rem; color: var(--text-main);">Email Me</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">sofiawaf05@gmail.com</p>
+            </div>
+          </a>
+
+          <a href="tel:+254724910372" class="contact-card">
+            <div class="contact-icon" style="color: var(--accent-cyan); background: rgba(34, 211, 238, 0.15);">
+              <i class="ri-phone-fill"></i>
+            </div>
+            <div>
+              <h4 style="font-size: 1.1rem; color: var(--text-main);">Phone / WhatsApp</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">+254 724 910 372</p>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/sophy-naliaka-3168452a2/" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-icon" style="color: #0a66c2; background: rgba(10, 102, 194, 0.15);">
+              <i class="ri-linkedin-fill"></i>
+            </div>
+            <div>
+              <h4 style="font-size: 1.1rem; color: var(--text-main);">LinkedIn Profile</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">sophy-naliaka-3168452a2</p>
+            </div>
+          </a>
+
+          <a href="https://github.com/tmlnaliaka" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-icon" style="color: var(--text-main); background: rgba(255, 255, 255, 0.1);">
+              <i class="ri-github-fill"></i>
+            </div>
+            <div>
+              <h4 style="font-size: 1.1rem; color: var(--text-main);">GitHub Repositories</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">github.com/tmlnaliaka</p>
+            </div>
+          </a>
+
+          <div class="contact-card" style="cursor: default;">
+            <div class="contact-icon" style="color: var(--accent-fuchsia); background: rgba(217, 70, 239, 0.15);">
+              <i class="ri-map-pin-2-fill"></i>
+            </div>
+            <div>
+              <h4 style="font-size: 1.1rem; color: var(--text-main);">Location</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted);">Nairobi, Kenya</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <form id="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Your Full Name</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="e.g. Jane Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-email">Your Email Address</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="e.g. jane@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" class="form-input" placeholder="e.g. Software Engineering Opportunity / Collaboration" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Message</label>
+              <textarea id="contact-message" class="form-textarea" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="ri-send-plane-2-fill"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+
+      <!-- GitHub Activity Stats Bar -->
+      <div class="github-stats-bar">
+        <div class="github-stat">
+          <span>17+</span>
+          <p>Public Repositories</p>
+        </div>
+        <div class="github-stat">
+          <span>5+</span>
+          <p>Languages Used</p>
+        </div>
+        <div class="github-stat">
+          <span>2025–2026</span>
+          <p>Active on GitHub</p>
+        </div>
+        <div class="github-stat">
+          <span>3</span>
+          <p>Years of Coding</p>
+        </div>
+        <div>
+          <a href="https://github.com/tmlnaliaka" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.9rem;">
+            <i class="ri-github-fill"></i> View GitHub Profile
+          </a>
+        </div>
+      </div>
+
+      <div style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--border-glass);">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+          <a href="#hero" class="logo">
+            <span class="logo-tag">&lt;</span>SNW<span class="logo-tag"> /&gt;</span>
+          </a>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 <strong>Sophy Naliaka Wafula</strong>. All Rights Reserved.</p>
+          <div style="display: flex; gap: 1rem;">
+            <a href="https://github.com/tmlnaliaka" target="_blank" rel="noopener" class="icon-link"><i class="ri-github-fill"></i></a>
+            <a href="https://www.linkedin.com/in/sophy-naliaka-3168452a2/" target="_blank" rel="noopener" class="icon-link"><i class="ri-linkedin-fill"></i></a>
+            <a href="mailto:sofiawaf05@gmail.com" class="icon-link"><i class="ri-mail-fill"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Project Deep-Dive Modal -->
+  <div class="modal-backdrop" id="project-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close Modal">
+        <i class="ri-close-line"></i>
+      </button>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Loaded dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast" id="toast">
+    <i class="ri-checkbox-circle-fill" style="color: #10b981; font-size: 1.4rem;"></i>
+    <span id="toast-message">Message sent successfully!</span>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" aria-label="Back to Top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <!-- Custom JavaScript App -->
+  <script src="app.js"></script>
+</body>
+</html>

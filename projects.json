@@ -1,0 +1,46 @@
+[
+  {
+    "id": "thrift-shop",
+    "title": "Online Local Thrift Shop Management System",
+    "status": "In Progress",
+    "category": "fullstack",
+    "tags": ["Full-Stack", "JavaScript", "MySQL", "Authentication", "Responsive"],
+    "icon": "ri-store-2-line",
+    "shortDesc": "A full-stack web application automating inventory and sales tracking for small-scale thrift businesses.",
+    "github": "https://github.com/tmlnaliaka",
+    "longDesc": "<p>Architected a complete inventory and sales tracking platform tailored for local thrift store operations. Key features include:</p><ul><li><strong>Relational MySQL Database:</strong> Manages real-time item status (Available/Sold), category cataloging, and sales receipts.</li><li><strong>Admin Authentication System:</strong> Secure credential handling for stock addition, price edits, and sales ledger management.</li><li><strong>Dynamic JavaScript Frontend:</strong> Instant UI updates upon inventory state transitions across desktop and mobile browsers.</li><li><strong>Sales Analytics:</strong> Instant breakdown of daily revenue and item turnover rates.</li></ul>"
+  },
+  {
+    "id": "kdms",
+    "title": "KDMS - Kenya Disaster Management System",
+    "status": "Featured Repository",
+    "category": "mobile-ai",
+    "tags": ["Gemini AI", "FastAPI", "React", "SMS Alerts", "NDMA"],
+    "icon": "ri-alarm-warning-line",
+    "shortDesc": "A Gemini-powered FastAPI/React platform for Kenya’s NDMA featuring real-time mapping, AI analysis, and SMS worker dispatch.",
+    "github": "https://github.com/tmlnaliaka/KDMS",
+    "longDesc": "<p>A disaster response planning dashboard that blends geospatial awareness, AI analysis, and rapid dispatch orchestration.</p><ul><li><strong>AI Risk Analysis:</strong> Uses Gemini-based recommendations to assess local disaster exposure.</li><li><strong>Field Communication:</strong> SMS and alert flows help coordinate emergency teams.</li><li><strong>Operational Dashboard:</strong> Enables monitoring, data layering, and incident visibility.</li></ul>"
+  },
+  {
+    "id": "medtriage",
+    "title": "Medtriage",
+    "status": "Private Repository",
+    "category": "mobile-ai",
+    "tags": ["Kotlin", "Healthcare", "Mobile", "Data Security"],
+    "icon": "ri-heart-pulse-line",
+    "shortDesc": "A private healthcare triage and patient note system focused on quick assessment and secure handling of records.",
+    "github": "https://github.com/tmlnaliaka",
+    "longDesc": "<p>A healthcare-focused project designed to streamline triage tasks and improve early patient assessment.</p><ul><li><strong>Clinical Workflow:</strong> Organizes triage intake, urgency classification, and response priorities.</li><li><strong>Secure Handling:</strong> Protects patient notes and sensitive operational data.</li><li><strong>Mobile Friendly:</strong> Built for rapid access in field and clinical settings.</li></ul>"
+  },
+  {
+    "id": "personal-portfolio",
+    "title": "Personal Portfolio Website",
+    "status": "Public Repository",
+    "category": "fullstack",
+    "tags": ["HTML5", "CSS3", "JavaScript", "UI/UX Design"],
+    "icon": "ri-window-fill",
+    "shortDesc": "Developed a professional portfolio showcase applying clean UI/UX design principles and visual hierarchy.",
+    "github": "https://github.com/tmlnaliaka/PORTFOLIO",
+    "longDesc": "<p>The original personal portfolio project demonstrating front-end design mastery:</p><ul><li><strong>UI/UX Principles:</strong> Harmonious color schemes, readable typography, and intuitive navigation paths.</li><li><strong>Cross-Device Responsive Layouts:</strong> Mobile-first media queries ensuring perfect rendering on all screen sizes.</li></ul>"
+  }
+]

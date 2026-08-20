@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sophy Naliaka Wafula | CV</title>
+  <meta name="description" content="Curriculum vitae of Sophy Naliaka Wafula, software engineering student and full-stack developer.">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #182033;
+      --muted: #5d6678;
+      --purple: #6d28d9;
+      --purple-light: #ede9fe;
+      --line: #dfe3eb;
+      --paper: #ffffff;
+      --page: #eef0f5;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    .cv-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      width: min(1080px, calc(100% - 2rem));
+      margin: 1.25rem auto;
+    }
+
+    .toolbar-link,
+    .toolbar-button {
+      border: 0;
+      border-radius: 8px;
+      padding: 0.7rem 1rem;
+      color: #fff;
+      background: var(--purple);
+      font: inherit;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .toolbar-link {
+      color: var(--purple);
+      background: transparent;
+      border: 1px solid var(--purple);
+    }
+
+    .cv-page {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      width: min(1080px, calc(100% - 2rem));
+      min-height: 1120px;
+      margin: 0 auto 2rem;
+      background: var(--paper);
+      box-shadow: 0 18px 45px rgba(24, 32, 51, 0.13);
+    }
+
+    .cv-sidebar {
+      padding: 2.4rem 1.8rem;
+      color: #f7f5ff;
+      background: linear-gradient(160deg, #20103f, #32136b 60%, #4c1d95);
+    }
+
+    .sidebar-name {
+      margin: 0 0 1.3rem;
+      font-size: 1.65rem;
+      line-height: 1.15;
+    }
+
+    .sidebar-role {
+      margin: .55rem 0 2rem;
+      color: #ddd6fe;
+      font-size: .92rem;
+    }
+
+    .sidebar-heading {
+      margin: 1.8rem 0 .7rem;
+      padding-bottom: .45rem;
+      border-bottom: 1px solid rgba(255,255,255,.25);
+      color: #fff;
+      font-size: .75rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .contact-list,
+    .skill-list {
+      display: grid;
+      gap: .65rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: .83rem;
+    }
+
+    .contact-list li {
+      display: flex;
+      gap: .55rem;
+      align-items: flex-start;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-list i { color: #c4b5fd; font-size: 1rem; }
+    .contact-list a { color: inherit; text-decoration: none; }
+    .contact-list a:hover,
+    .contact-list a:focus-visible { color: #ddd6fe; text-decoration: underline; }
+
+    .skill-list li {
+      display: flex;
+      justify-content: space-between;
+      gap: .5rem;
+    }
+
+    .skill-list span:last-child { color: #ddd6fe; }
+
+    .sidebar-note {
+      margin-top: 2rem;
+      color: #ddd6fe;
+      font-size: .8rem;
+    }
+
+    .cv-main {
+      padding: 2.5rem 3rem;
+    }
+
+    .cv-section {
+      margin-bottom: 2rem;
+    }
+
+    .cv-section:last-child { margin-bottom: 0; }
+
+    .section-heading {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      margin: 0 0 .85rem;
+      color: var(--purple);
+      font-size: .92rem;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .section-heading::after {
+      height: 1px;
+      flex: 1;
+      background: var(--line);
+      content: "";
+    }
+
+    .profile {
+      margin: 0;
+      color: var(--muted);
+      font-size: .96rem;
+    }
+
+    .entry {
+      position: relative;
+      padding: 0 0 1.1rem 1rem;
+      border-left: 2px solid var(--purple-light);
+    }
+
+    .entry:last-child { padding-bottom: 0; }
+
+    .entry::before {
+      position: absolute;
+      top: .35rem;
+      left: -5px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--purple);
+      content: "";
+    }
+
+    .entry-title {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .entry-meta {
+      margin: .15rem 0 .35rem;
+      color: var(--purple);
+      font-size: .82rem;
+      font-weight: 700;
+    }
+
+    .entry p,
+    .entry ul {
+      margin: .25rem 0 0;
+      color: var(--muted);
+      font-size: .87rem;
+    }
+
+    .entry ul {
+      padding-left: 1.1rem;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .8rem;
+    }
+
+    .project {
+      padding: .9rem;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .project a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .project a:hover h3,
+    .project a:focus-visible h3 {
+      color: var(--purple);
+      text-decoration: underline;
+    }
+
+    .project h3 {
+      margin: 0 0 .25rem;
+      font-size: .9rem;
+    }
+
+    .project p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .78rem;
+    }
+
+    .tags {
+      margin-top: .45rem;
+      color: var(--purple);
+      font-size: .73rem;
+      font-weight: 700;
+    }
+
+    .external-link {
+      display: inline-block;
+      margin-top: .55rem;
+      color: var(--purple);
+      font-size: .75rem;
+      font-weight: 700;
+    }
+
+    @media (max-width: 760px) {
+      .cv-toolbar { align-items: stretch; flex-direction: column; }
+      .cv-toolbar a, .cv-toolbar button { text-align: center; }
+      .cv-page { display: block; }
+      .cv-sidebar { padding: 2rem 1.5rem; }
+      .cv-main { padding: 2rem 1.5rem; }
+      .project-grid { grid-template-columns: 1fr; }
+    }
+
+    @media print {
+      @page { size: A4; margin: 0; }
+      body { background: #fff; }
+      .cv-toolbar { display: none; }
+      .cv-page {
+        width: 100%;
+        min-height: 0;
+        margin: 0;
+        box-shadow: none;
+      }
+      .cv-sidebar { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-toolbar" aria-label="CV actions">
+    <a class="toolbar-link" href="index.html"><i class="ri-arrow-left-line"></i> Back to portfolio</a>
+    <button class="toolbar-button" type="button" onclick="window.print()"><i class="ri-printer-line"></i> Print / Save as PDF</button>
+  </div>
+
+  <main class="cv-page">
+    <aside class="cv-sidebar">
+      <h1 class="sidebar-name">Sophy Naliaka Wafula</h1>
+      <p class="sidebar-role">Software Engineering Student<br>Full-Stack Developer</p>
+
+      <h2 class="sidebar-heading">Contact</h2>
+      <ul class="contact-list">
+        <li><i class="ri-mail-line"></i><a href="mailto:sofiawaf05@gmail.com">sofiawaf05@gmail.com</a></li>
+        <li><i class="ri-phone-line"></i><a href="tel:+254724910372">+254 724 910 372</a></li>
+        <li><i class="ri-map-pin-line"></i><span>Nairobi, Kenya</span></li>
+        <li><i class="ri-linkedin-box-line"></i><a href="https://www.linkedin.com/in/sophy-naliaka-3168452a2/" target="_blank" rel="noopener noreferrer">LinkedIn profile</a></li>
+        <li><i class="ri-github-line"></i><a href="https://github.com/tmlnaliaka" target="_blank" rel="noopener noreferrer">GitHub profile</a></li>
+      </ul>
+
+      <h2 class="sidebar-heading">Technical Skills</h2>
+      <ul class="skill-list">
+        <li><span>HTML / CSS</span><span>89%</span></li>
+        <li><span>JavaScript</span><span>84%</span></li>
+        <li><span>Python</span><span>80%</span></li>
+        <li><span>MySQL</span><span>85%</span></li>
+        <li><span>C++</span><span>70%</span></li>
+        <li><span>Kotlin</span><span>50%</span></li>
+      </ul>
+
+      <h2 class="sidebar-heading">Languages</h2>
+      <ul class="skill-list">
+        <li><span>English</span><span>Fluent</span></li>
+        <li><span>Swahili</span><span>Conversational</span></li>
+      </ul>
+
+      <p class="sidebar-note">Open to internships, entry-level software engineering roles, and collaborative technology projects.</p>
+    </aside>
+
+    <section class="cv-main">
+      <section class="cv-section">
+        <h2 class="section-heading">Professional Profile</h2>
+        <p class="profile">Detail-oriented Software Engineering student at Zetech University with practical experience building full-stack web applications, relational database systems, interactive interfaces, and application prototypes. Strong foundation in object-oriented programming, API workflows, UI/UX design, and problem solving, with a commitment to clean, maintainable code.</p>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="section-heading">Education</h2>
+        <article class="entry">
+          <h3 class="entry-title">Bachelor of Science in Software Engineering</h3>
+          <p class="entry-meta">Zetech University, Ruiru, Kenya | 2024 - 2027 (Ongoing)</p>
+          <p>Coursework includes object-oriented programming, database systems, web application architecture, data structures and algorithms, and software testing.</p>
+        </article>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="section-heading">Selected Projects</h2>
+        <div class="project-grid">
+          <article class="project">
+            <a href="https://github.com/tmlnaliaka/BimaFast" target="_blank" rel="noopener noreferrer">
+              <h3>BimaFast</h3>
+              <p>Full-stack insurance platform repository showcasing structured web workflows, responsive UI, and practical application development.</p>
+              <div class="tags">JavaScript · MySQL · HTML/CSS</div>
+              <span class="external-link">View BimaFast repository <i class="ri-external-link-line"></i></span>
+            </a>
+          </article>
+          <article class="project">
+            <a href="https://github.com/tmlnaliaka/KDMS" target="_blank" rel="noopener noreferrer">
+              <h3>KDMS Emergency Dispatch System</h3>
+              <p>Emergency dispatch prototype with structured API workflows and AI-assisted alert simulation.</p>
+              <div class="tags">Python · FastAPI · React</div>
+              <span class="external-link">View KDMS repository <i class="ri-external-link-line"></i></span>
+            </a>
+          </article>
+          <article class="project">
+            <a href="https://github.com/tmlnaliaka/PORTFOLIO" target="_blank" rel="noopener noreferrer">
+              <h3>Personal Portfolio Website</h3>
+              <p>Responsive portfolio website demonstrating front-end design, visual hierarchy, project presentation, and accessible navigation.</p>
+              <div class="tags">HTML5 · CSS3 · JavaScript · UI/UX</div>
+              <span class="external-link">View portfolio repository <i class="ri-external-link-line"></i></span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="section-heading">Certifications</h2>
+        <article class="entry">
+          <h3 class="entry-title">Certificate in UX/UI Design</h3>
+          <p class="entry-meta">YMCA Kenya, Nairobi | 2024</p>
+          <p>User research, wireframing, interactive prototyping, visual hierarchy, colour theory, and accessibility-focused interface design.</p>
+        </article>
+        <article class="entry">
+          <h3 class="entry-title">Certificate of Computer Applications</h3>
+          <p class="entry-meta">Kenya Institute of Management, Nairobi | 2024</p>
+          <p>Computer applications, office productivity suites, document management, and foundational IT operations.</p>
+        </article>
+        <article class="entry">
+          <h3 class="entry-title">Introduction to IoT and Digital Transformation</h3>
+          <p class="entry-meta">Cisco Networking Academy | Certificate available in portfolio</p>
+        </article>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="section-heading">Core Strengths</h2>
+        <p class="profile">Analytical thinking · Team collaboration · Leadership · Attention to detail · User-centred design · Continuous learning</p>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
