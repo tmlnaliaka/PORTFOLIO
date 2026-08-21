@@ -115,12 +115,31 @@
     .contact-list a:focus-visible { color: #ddd6fe; text-decoration: underline; }
 
     .skill-list li {
+      display: grid;
+      gap: .25rem;
+    }
+
+    .skill-label {
       display: flex;
       justify-content: space-between;
       gap: .5rem;
     }
 
-    .skill-list span:last-child { color: #ddd6fe; }
+    .skill-label span:last-child { color: #ddd6fe; }
+
+    .skill-bar {
+      height: 4px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(255,255,255,.18);
+    }
+
+    .skill-bar span {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: #c4b5fd;
+    }
 
     .sidebar-note {
       margin-top: 1.35rem;
@@ -293,7 +312,7 @@
       <h2 class="sidebar-heading">Contact</h2>
       <ul class="contact-list">
         <li><i class="ri-mail-line"></i><a href="mailto:sofiawaf05@gmail.com">sofiawaf05@gmail.com</a></li>
-        <li><i class="ri-whatsapp-line"></i><a href="https://wa.me/254724910372" target="_blank" rel="noopener noreferrer">WhatsApp: +254 724 910 372</a></li>
+        <li><i class="ri-phone-line"></i><a href="https://wa.me/254724910372" target="_blank" rel="noopener noreferrer">+254 724 910 372</a></li>
         <li><i class="ri-map-pin-line"></i><span>Nairobi, Kenya</span></li>
         <li><i class="ri-linkedin-box-line"></i><a href="https://www.linkedin.com/in/sophy-naliaka-3168452a2/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/sophy-naliaka-3168452a2/</a></li>
         <li><i class="ri-github-line"></i><a href="https://github.com/tmlnaliaka" target="_blank" rel="noopener noreferrer">https://github.com/tmlnaliaka</a></li>
@@ -301,18 +320,18 @@
 
       <h2 class="sidebar-heading">Technical Skills</h2>
       <ul class="skill-list">
-        <li><span>HTML / CSS</span><span>89%</span></li>
-        <li><span>JavaScript</span><span>84%</span></li>
-        <li><span>Python</span><span>80%</span></li>
-        <li><span>MySQL</span><span>85%</span></li>
-        <li><span>C++</span><span>70%</span></li>
-        <li><span>Kotlin</span><span>50%</span></li>
+        <li><div class="skill-label"><span>HTML / CSS</span><span>89%</span></div><div class="skill-bar"><span style="width:89%"></span></div></li>
+        <li><div class="skill-label"><span>JavaScript</span><span>84%</span></div><div class="skill-bar"><span style="width:84%"></span></div></li>
+        <li><div class="skill-label"><span>Python</span><span>80%</span></div><div class="skill-bar"><span style="width:80%"></span></div></li>
+        <li><div class="skill-label"><span>MySQL</span><span>85%</span></div><div class="skill-bar"><span style="width:85%"></span></div></li>
+        <li><div class="skill-label"><span>C++</span><span>70%</span></div><div class="skill-bar"><span style="width:70%"></span></div></li>
+        <li><div class="skill-label"><span>Kotlin</span><span>50%</span></div><div class="skill-bar"><span style="width:50%"></span></div></li>
       </ul>
 
       <h2 class="sidebar-heading">Languages</h2>
       <ul class="skill-list">
-        <li><span>English</span><span>Fluent</span></li>
-        <li><span>Swahili</span><span>Conversational</span></li>
+        <li><div class="skill-label"><span>English</span><span>Fluent</span></div></li>
+        <li><div class="skill-label"><span>Swahili</span><span>Conversational</span></div></li>
       </ul>
 
       <p class="sidebar-note">Open to internships, entry-level software engineering roles, and collaborative technology projects.</p>
@@ -346,15 +365,15 @@
           </article>
           <article class="project">
             <a href="https://github.com/tmlnaliaka" target="_blank" rel="noopener noreferrer">
-              <h3>Online Local Thrift Shop Management System</h3>
-              <p>Full-stack online thrift platform with admin authentication, inventory management, sales tracking, and responsive customer workflows.</p>
-              <div class="tags">JavaScript · MySQL · HTML/CSS · Authentication</div>
+              <h3>Online Local Thrift Shop</h3>
+              <p>Full-stack online thrift platform with admin authentication, inventory management, sales tracking, and responsive workflows.</p>
+              <div class="tags">JavaScript · MySQL · HTML/CSS · Auth</div>
               <span class="external-link">View project repositories <i class="ri-external-link-line"></i></span>
             </a>
           </article>
           <article class="project">
             <a href="https://github.com/tmlnaliaka/KDMS" target="_blank" rel="noopener noreferrer">
-              <h3>KDMS Emergency Dispatch System</h3>
+              <h3>KDMS Emergency Dispatch</h3>
               <p>Emergency dispatch prototype with structured API workflows and AI-assisted alert simulation.</p>
               <div class="tags">Python · FastAPI · React</div>
               <span class="external-link">View KDMS repository <i class="ri-external-link-line"></i></span>
@@ -386,6 +405,7 @@
         <article class="entry">
           <h3 class="entry-title">Introduction to IoT and Digital Transformation</h3>
           <p class="entry-meta">Cisco Networking Academy | Certificate available in portfolio</p>
+          <p>Fundamentals of Internet of Things systems, digital transformation strategy, and emerging network technologies.</p>
         </article>
       </section>
 
