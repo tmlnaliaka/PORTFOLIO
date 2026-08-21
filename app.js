@@ -334,6 +334,7 @@ const DEFAULT_PROJECTS_DATA = [
     icon: 'ri-shield-flash-line',
     shortDesc: 'An insurance technology web platform enabling quick quote generation, coverage calculator, and policy management.',
     github: 'https://github.com/tmlnaliaka/BimaFast',
+    liveDemo: 'https://bimafast.onrender.com/',
     longDesc: `
       <p>BimaFast simplifies micro-insurance quote estimation and policy selection for East African users:</p>
       <ul>
@@ -369,6 +370,7 @@ const DEFAULT_PROJECTS_DATA = [
     icon: 'ri-window-fill',
     shortDesc: 'Developed a professional portfolio showcase applying clean UI/UX design principles and visual hierarchy.',
     github: 'https://github.com/tmlnaliaka/PORTFOLIO',
+    liveDemo: 'https://tmlnaliaka.github.io/PORTFOLIO/',
     longDesc: `
       <p>The original personal portfolio project demonstrating front-end design mastery:</p>
       <ul>
@@ -422,6 +424,11 @@ function renderProjects(filter = 'all') {
             <i class="ri-information-line"></i> Deep Dive
           </button>
           <div class="project-links">
+            ${project.liveDemo ? `
+              <a href="${project.liveDemo}" target="_blank" rel="noopener" class="icon-link" title="Live Demo">
+                <i class="ri-external-link-line"></i>
+              </a>
+            ` : ''}
             <a href="${project.github}" target="_blank" rel="noopener" class="icon-link" title="GitHub Repository">
               <i class="ri-github-fill"></i>
             </a>
@@ -489,6 +496,11 @@ function openProjectModal(projectId) {
     </div>
 
     <div style="display:flex; gap:1rem;">
+      ${project.liveDemo ? `
+        <a href="${project.liveDemo}" target="_blank" rel="noopener" class="btn btn-outline" style="flex:1;">
+          <i class="ri-external-link-line"></i> Live Demo
+        </a>
+      ` : ''}
       <a href="${project.github}" target="_blank" rel="noopener" class="btn btn-primary" style="flex:1;">
         <i class="ri-github-fill"></i> View Full Repository on GitHub
       </a>

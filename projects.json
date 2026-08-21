@@ -30,6 +30,7 @@
     "icon": "ri-shield-flash-line",
     "shortDesc": "An insurance technology experience for quick quote generation, coverage discovery, and policy management.",
     "github": "https://github.com/tmlnaliaka/BimaFast",
+    "liveDemo": "https://bimafast.onrender.com/",
     "longDesc": "<p>BimaFast demonstrates how a complex insurance workflow can become clear, approachable, and responsive for everyday users.</p><ul><li><strong>Quote Flow:</strong> Guides users through coverage choices with clear feedback.</li><li><strong>Responsive Product UI:</strong> Designed for accessible use across mobile and desktop screens.</li></ul>"
   },
   {
@@ -41,6 +42,7 @@
     "icon": "ri-window-fill",
     "shortDesc": "Developed a professional portfolio showcase applying clean UI/UX design principles and visual hierarchy.",
     "github": "https://github.com/tmlnaliaka/PORTFOLIO",
+    "liveDemo": "https://tmlnaliaka.github.io/PORTFOLIO/",
     "longDesc": "<p>The original personal portfolio project demonstrating front-end design mastery:</p><ul><li><strong>UI/UX Principles:</strong> Harmonious color schemes, readable typography, and intuitive navigation paths.</li><li><strong>Cross-Device Responsive Layouts:</strong> Mobile-first media queries ensuring perfect rendering on all screen sizes.</li></ul>"
   }
 ]
