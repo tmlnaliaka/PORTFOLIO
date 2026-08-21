@@ -277,7 +277,7 @@ const DEFAULT_PROJECTS_DATA = [
     tags: ['Full-Stack', 'JavaScript', 'MySQL', 'Authentication', 'Responsive'],
     icon: 'ri-store-2-line',
     shortDesc: 'A full-stack web application automating inventory and sales tracking for small-scale thrift businesses.',
-    github: 'https://github.com/tmlnaliaka',
+    github: 'https://github.com/tmlnaliaka/under1000',
     longDesc: `
       <p>Architected a complete inventory and sales tracking platform tailored for local thrift store operations. Key features include:</p>
       <ul>

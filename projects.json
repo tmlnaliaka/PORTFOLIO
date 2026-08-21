@@ -7,7 +7,7 @@
     "tags": ["Full-Stack", "JavaScript", "MySQL", "Authentication", "Responsive"],
     "icon": "ri-store-2-line",
     "shortDesc": "A full-stack web application automating inventory and sales tracking for small-scale thrift businesses.",
-    "github": "https://github.com/tmlnaliaka",
+    "github": "https://github.com/tmlnaliaka/under1000",
     "longDesc": "<p>Architected a complete inventory and sales tracking platform tailored for local thrift store operations. Key features include:</p><ul><li><strong>Relational MySQL Database:</strong> Manages real-time item status (Available/Sold), category cataloging, and sales receipts.</li><li><strong>Admin Authentication System:</strong> Secure credential handling for stock addition, price edits, and sales ledger management.</li><li><strong>Dynamic JavaScript Frontend:</strong> Instant UI updates upon inventory state transitions across desktop and mobile browsers.</li><li><strong>Sales Analytics:</strong> Instant breakdown of daily revenue and item turnover rates.</li></ul>"
   },
   {
