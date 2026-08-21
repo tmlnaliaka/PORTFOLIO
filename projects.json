@@ -22,6 +22,17 @@
     "longDesc": "<p>A disaster response planning dashboard that blends geospatial awareness, AI analysis, and rapid dispatch orchestration.</p><ul><li><strong>AI Risk Analysis:</strong> Uses Gemini-based recommendations to assess local disaster exposure.</li><li><strong>Field Communication:</strong> SMS and alert flows help coordinate emergency teams.</li><li><strong>Operational Dashboard:</strong> Enables monitoring, data layering, and incident visibility.</li></ul>"
   },
   {
+    "id": "bimafast",
+    "title": "BimaFast InsurTech Platform",
+    "status": "Public Repository",
+    "category": "fullstack",
+    "tags": ["Web Application", "JavaScript", "CSS3", "InsurTech"],
+    "icon": "ri-shield-flash-line",
+    "shortDesc": "An insurance technology experience for quick quote generation, coverage discovery, and policy management.",
+    "github": "https://github.com/tmlnaliaka/BimaFast",
+    "longDesc": "<p>BimaFast demonstrates how a complex insurance workflow can become clear, approachable, and responsive for everyday users.</p><ul><li><strong>Quote Flow:</strong> Guides users through coverage choices with clear feedback.</li><li><strong>Responsive Product UI:</strong> Designed for accessible use across mobile and desktop screens.</li></ul>"
+  },
+  {
     "id": "personal-portfolio",
     "title": "Personal Portfolio Website",
     "status": "Public Repository",

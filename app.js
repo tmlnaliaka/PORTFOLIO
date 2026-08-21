@@ -383,7 +383,7 @@ const PROJECTS_DATA = [];
 
 async function loadProjectsData() {
   try {
-    const response = await fetch('projects.json');
+    const response = await fetch('projects.json?v=20260821', { cache: 'no-store' });
     if (!response.ok) throw new Error('Failed to load projects.json');
     const data = await response.json();
     PROJECTS_DATA.length = 0;
@@ -414,6 +414,7 @@ function renderProjects(filter = 'all') {
         <div class="project-tags">
           ${project.tags.map(t => `<span class="tag">${t}</span>`).join('')}
         </div>
+        <span class="project-index">${String(filtered.indexOf(project) + 1).padStart(2, '0')} / ${String(filtered.length).padStart(2, '0')}</span>
         <h3 class="project-title">${project.title}</h3>
         <p class="project-desc">${project.shortDesc}</p>
         <div class="project-footer">
