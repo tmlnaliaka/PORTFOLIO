@@ -22,17 +22,6 @@
     "longDesc": "<p>A disaster response planning dashboard that blends geospatial awareness, AI analysis, and rapid dispatch orchestration.</p><ul><li><strong>AI Risk Analysis:</strong> Uses Gemini-based recommendations to assess local disaster exposure.</li><li><strong>Field Communication:</strong> SMS and alert flows help coordinate emergency teams.</li><li><strong>Operational Dashboard:</strong> Enables monitoring, data layering, and incident visibility.</li></ul>"
   },
   {
-    "id": "medtriage",
-    "title": "Medtriage",
-    "status": "Private Repository",
-    "category": "mobile-ai",
-    "tags": ["Kotlin", "Healthcare", "Mobile", "Data Security"],
-    "icon": "ri-heart-pulse-line",
-    "shortDesc": "A private healthcare triage and patient note system focused on quick assessment and secure handling of records.",
-    "github": "https://github.com/tmlnaliaka",
-    "longDesc": "<p>A healthcare-focused project designed to streamline triage tasks and improve early patient assessment.</p><ul><li><strong>Clinical Workflow:</strong> Organizes triage intake, urgency classification, and response priorities.</li><li><strong>Secure Handling:</strong> Protects patient notes and sensitive operational data.</li><li><strong>Mobile Friendly:</strong> Built for rapid access in field and clinical settings.</li></ul>"
-  },
-  {
     "id": "personal-portfolio",
     "title": "Personal Portfolio Website",
     "status": "Public Repository",

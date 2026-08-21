@@ -343,23 +343,6 @@ const DEFAULT_PROJECTS_DATA = [
     `
   },
   {
-    id: 'medtriage',
-    title: 'MedTriage Healthcare Simulation',
-    status: 'Public Repository',
-    category: 'systems',
-    tags: ['ShaderLab', 'Simulation Engine', 'Healthcare', 'Algorithms'],
-    icon: 'ri-hospital-line',
-    shortDesc: 'Emergency room triage simulation engine with visual ShaderLab rendering for patient priority queueing.',
-    github: 'https://github.com/tmlnaliaka/medtriage_simulation',
-    longDesc: `
-      <p>Simulates hospital emergency ward triage logic using priority queues and ShaderLab visual effects:</p>
-      <ul>
-        <li><strong>Priority Queue Engine:</strong> Dynamically sorts incoming patient vital signs into Critical, Urgent, and Standard treatment paths.</li>
-        <li><strong>Visual Shaders:</strong> ShaderLab implementation rendering patient status indicators and capacity metrics.</li>
-      </ul>
-    `
-  },
-  {
     id: 'dbms-wk8',
     title: 'Relational Database Management System',
     status: 'Public Repository',
@@ -772,7 +755,8 @@ function initResumeDownloader() {
     const resumeUrl = 'SOPHY_NALIAKA_WAFULA_CV.pdf';
     if (btn.tagName === 'A') {
       btn.setAttribute('href', resumeUrl);
-      btn.setAttribute('download', '');
+      btn.setAttribute('target', '_blank');
+      btn.setAttribute('rel', 'noopener');
       return;
     }
 
