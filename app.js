@@ -753,7 +753,7 @@ function initResumeDownloader() {
   if (!btn) return;
 
   btn.addEventListener('click', (event) => {
-    const resumeUrl = 'SOPHY_NALIAKA_WAFULA_CV.pdf';
+    const resumeUrl = 'resume.html';
     if (btn.tagName === 'A') {
       btn.setAttribute('href', resumeUrl);
       btn.setAttribute('target', '_blank');
